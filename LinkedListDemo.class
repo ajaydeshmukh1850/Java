@@ -1,0 +1,28 @@
+// Source code is decompiled from a .class file using FernFlower decompiler.
+import java.util.Iterator;
+import java.util.LinkedList;
+
+class LinkedListDemo {
+   LinkedListDemo() {
+   }
+
+   public static void main(String[] var0) {
+      LinkedList var1 = new LinkedList();
+      var1.add("ajay");
+      var1.add("ajay");
+      var1.add("ajay");
+
+      for(int var2 = 0; var2 < var1.size(); ++var2) {
+         System.out.println("" + var2 + " " + (String)var1.get(var2));
+      }
+
+      Iterator var4 = var1.iterator();
+
+      while(var4.hasNext()) {
+         String var3 = (String)var4.next();
+         System.out.println(var3);
+      }
+
+      System.out.println("2nd index : " + (String)var1.get(2));
+   }
+}

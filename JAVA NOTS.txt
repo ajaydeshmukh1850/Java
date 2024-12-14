@@ -1,0 +1,176 @@
+       *java*
+	   
+	 Java is a programming language and a platform. Java is a high level, robust, object-oriented and secure programming language.
+	 
+	 #Java was developed by Sun Microsystems (which is now the subsidiary of Oracle) in the year 1995.#
+	 
+	 
+	 example:-  Simple.java
+
+ class Simple{  
+    public static void main(String args[]){  
+     System.out.println("Hello Java");  
+    }  
+}  
+
+
+   *Types of Java Applications*
+   
+   1] Standalone Applications
+   2] Web Apllication
+   3] Enteerprice Apllication
+   4]Mobile Apllication
+   
+   
+   1] 1] Standalone Applications :- Standalone applications are also known as desktop applications or window-based applications.
+   
+   Examples of standalone application are Media player, antivirus, etc. 
+   
+   AWT - Abstract Window Toolkit.
+   // AWT and Swing are used in Java for creating standalone applications.//
+   
+   2] Web Application :- An application that runs on the server side and creates a dynamic page is called a web application.
+    Servlet, JSP, Struts, Spring, Hibernate, JSF, etc. technologies are used for creating web applications in Java.
+	
+	3]  Enterprise Application:-  An application that is distributed in nature, such as banking applications, etc. is called an enterprise Application.
+	like high-level security, load balancing, and clustering. In Java, EJB is used for creating enterprise applications.
+	
+	4] Mobile Application :- An application which is created for mobile devices is called a mobile application.
+	Android and Java ME are used for creating mobile applications.
+	
+	
+	# Java Platforms / Editions #
+	
+	1] Java SE (Java Standard Edition) :- It is a Java programming platform. It includes Java programming APIs such as java.lang, java.io, java.net, java.util, java.sql, java.math etc. It includes core topics like OOPs, String, Regex, Exception, Inner classes, Multithreading,
+	I/O Stream, Networking, AWT, Swing, Reflection, Collection, etc.
+	
+	2] Java EE (Java Enterprise Edition) :-It is an enterprise platform that is mainly used to develop web and enterprise applications. It is built on top of the Java SE platform. It includes topics like Servlet,
+	JSP, Web Services, EJB, JPA, etc.
+	
+    3]Java ME (Java Micro Edition) :- It is a micro platform that is dedicated to mobile applications.
+	
+	
+ *Features of Java - (praper topic online)*
+
+Simple
+Object-Oriented
+Portable
+Platform independent
+Secured
+Robust
+Architecture neutral
+Interpreted
+High Performance
+Multithreaded
+Distributed
+Dynamic
+
+*Parameters used in First Java Program* 
+Let's see what is the meaning of 
+class, 
+public,
+static,
+void, main,
+String[], 
+System.out.println().
+
+
+*How to set path in Java*
+The path is required to be set for using tools such as javac, java, etc.
+1] Temporary
+2] Permanent
+
+
+Difference between JDK, JRE, and JVM :-
+We must understand the differences between JDK, JRE, and JVM before proceeding further to Java. 
+
+1] JVM :-
+JVM (Java Virtual Machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist.
+JVMs are available for many hardware and software platforms. 
+
+The JVM performs the following main tasks:-
+
+1]Loads code
+2]Verifies code
+3]Executes code
+4]Provides runtime environment
+
+2] JRE :- JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. 
+he Java Runtime Environment is a set of software tools which are used for developing Java applications. 
+
+3] JDK :- JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets.
+ It physically exists. It contains JRE + development tools.
+ 
+1]Standard Edition Java Platform
+2]Enterprise Edition Java Platform
+3]Micro Edition Java Platform
+
+
+WHAT IS JVM ??
+
+A specification :-
+where working of Java Virtual Machine is specified. But implementation provider is independent to choose the algorithm. Its implementation has been provided by Oracle and other companies.
+
+An implementation:-
+ Its implementation is known as JRE (Java Runtime Environment).
+ 
+Runtime Instance :- Whenever you write java command on the command prompt to run the java class, an instance of JVM is created.
+
+Loads code
+Verifies code
+Executes code
+Provides runtime environment
+
+JVM provides definitions for the:
+
+Memory area
+Class file format
+Register set
+Garbage-collected heap
+Fatal error reporting etc.
+
+//JVM Architecture // (EXPLAIN ONLINE)
+
+Classloader:- Classloader is a subsystem of JVM which is used to load class files.
+
+
+Bootstrap ClassLoader: This is the first classloader which is the super class of Extension classloader. 
+It loads the rt.jar file which contains all class files of Java Standard Edition like java.lang package classes, java.net package classes, 
+java.util package classes, java.io package classes, java.sql package classes etc.
+
+Extension ClassLoader: This is the child classloader of Bootstrap and parent classloader of System classloader.
+ It loades the jar files located inside $JAVA_HOME/jre/lib/ext directory.
+ 
+System/Application ClassLoader: This is the child classloader of Extension classloader. 
+It loads the classfiles from classpath. By default, classpath is set to current directory. You can change the classpath using "-cp" or "-classpath" switch. It is also known as Application classloader.
+
+
+
+JAVA VARIABLE :-
+
+A variable is a container which holds the value while the Java program is executed. 
+A variable is assigned with a data type.
+
+ There are three types of variables in java:- 
+ 1]local
+ 2]instanc
+ 3]static.
+
+
+1) Local Variable:-
+A variable declared inside the body of the method is called local variable. You can use this variable only within that method and the other methods in the class aren't even aware that the variable exists.
+
+A local variable cannot be defined with "static" keyword.
+
+2) Instance Variable:-
+A variable declared inside the class but outside the body of the method, is called an instance variable. It is not declared as static.
+
+It is called an instance variable because its value is instance-specific and is not shared among instances.
+
+3) Static variable:-
+A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+
+
+There are two types of data types in Java:-
+ primitive and non-primitive.
